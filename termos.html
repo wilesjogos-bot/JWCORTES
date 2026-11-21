@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JWCORTES — Edição e Publicação Inteligente de Cortes</title>
+    <title>Termos de Serviço — JWCORTES</title>
     <style>
         :root {
             --bg-dark: #09090b;
@@ -16,20 +16,20 @@
         }
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-dark);
+            line-height: 1.7;
             color: var(--text-main);
-            line-height: 1.6;
+            background-color: var(--bg-dark);
+            margin: 0;
+            padding: 0;
         }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1100px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 24px 20px;
             border-bottom: 1px solid var(--border-color);
@@ -41,182 +41,103 @@
             background: linear-gradient(90deg, #ffffff, var(--accent-cyan));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-decoration: none;
         }
         nav a {
             color: var(--text-muted);
             text-decoration: none;
-            margin-left: 24px;
-            font-size: 0.95rem;
+            margin-left: 20px;
+            font-size: 0.9rem;
             transition: color 0.2s;
         }
         nav a:hover {
             color: #ffffff;
         }
-        .hero {
-            text-align: center;
-            max-width: 820px;
-            margin: 80px auto 60px;
-            padding: 0 20px;
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
         }
-        .badge {
-            display: inline-block;
-            background: rgba(0, 242, 254, 0.1);
-            color: var(--accent-cyan);
-            border: 1px solid rgba(0, 242, 254, 0.3);
-            padding: 6px 14px;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            line-height: 1.15;
-            font-weight: 800;
-            margin-bottom: 20px;
-        }
-        .hero h1 span {
+        h1 {
             background: linear-gradient(90deg, var(--accent-cyan), var(--accent-pink));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-top: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 14px;
+            font-size: 2rem;
         }
-        .hero p {
-            color: var(--text-muted);
-            font-size: 1.15rem;
-            margin-bottom: 36px;
-        }
-        .cta-group {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-        .btn-primary {
-            background: linear-gradient(90deg, var(--accent-cyan), #0284c7);
-            color: #09090b;
-            font-weight: 700;
-            padding: 14px 28px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: transform 0.2s, opacity 0.2s;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            opacity: 0.95;
-        }
-        .btn-secondary {
-            background: var(--bg-card);
-            color: var(--text-main);
-            border: 1px solid var(--border-color);
-            font-weight: 600;
-            padding: 14px 28px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: border-color 0.2s;
-        }
-        .btn-secondary:hover {
-            border-color: var(--accent-cyan);
-        }
-        .features {
-            max-width: 1100px;
-            margin: 60px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-        }
-        .card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 28px;
-        }
-        .card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+        h2 {
+            margin-top: 28px;
             color: #ffffff;
+            font-size: 1.2rem;
         }
-        .card p {
+        p, li {
             color: var(--text-muted);
-            font-size: 0.95rem;
         }
-        .promo-banner {
-            max-width: 1060px;
-            margin: 60px auto;
-            padding: 40px;
-            background: linear-gradient(135deg, #16161d 0%, #0f172a 100%);
-            border: 1px solid rgba(0, 242, 254, 0.25);
-            border-radius: 16px;
-            text-align: center;
+        a {
+            color: var(--accent-cyan);
         }
-        .promo-banner h2 {
-            font-size: 1.8rem;
-            margin-bottom: 12px;
-        }
-        .promo-banner p {
-            color: var(--text-muted);
-            max-width: 650px;
-            margin: 0 auto 24px;
+        .date {
+            font-size: 0.9rem;
+            color: #71717a;
+            margin-bottom: 24px;
         }
         footer {
             border-top: 1px solid var(--border-color);
-            margin-top: 80px;
-            padding: 32px 20px;
+            margin-top: 60px;
             text-align: center;
-            color: var(--text-muted);
-            font-size: 0.9rem;
+            padding: 30px 20px;
+            color: #71717a;
+            font-size: 0.85rem;
         }
         footer a {
             color: var(--accent-cyan);
             text-decoration: none;
             margin: 0 10px;
         }
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 2.2rem; }
-        }
     </style>
 </head>
 <body>
-
     <header>
-        <div class="logo">JWCORTES</div>
+        <a href="index.html" class="logo">JWCORTES</a>
         <nav>
-            <a href="#recursos">Recursos</a>
-            <a href="termos.html">Termos de Serviço</a>
+            <a href="index.html">Início</a>
             <a href="privacidade.html">Privacidade</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="badge">Integração Oficial com API do TikTok</div>
-        <h1>Transforme vídeos longos em <span>cortes virais</span> em segundos.</h1>
-        <p>O JWCORTES automatiza a edição, organização e publicação direta dos seus melhores momentos no TikTok com total segurança e rapidez.</p>
-        <div class="cta-group">
-            <a href="#recursos" class="btn-primary">Conhecer a Plataforma</a>
-            <a href="termos.html" class="btn-secondary">Termos & Documentação</a>
-        </div>
-    </section>
+    <div class="container">
+        <h1>Termos de Serviço</h1>
+        <p class="date">Última atualização: Novembro de 2026</p>
 
-    <section id="recursos" class="features">
-        <div class="card">
-            <h3>⚡ Cortes Dinâmicos</h3>
-            <p>Prepare e ajuste vídeos no formato vertical (9:16) otimizados para retenção e engajamento máximo no feed.</p>
-        </div>
-        <div class="card">
-            <h3>🔗 Publicação Direta</h3>
-            <p>Conecte a sua conta via login oficial do TikTok e envie os seus rascunhos ou vídeos diretamente sem sair da plataforma.</p>
-        </div>
-        <div class="card">
-            <h3>🔒 Privacidade Garantida</h3>
-            <p>Autenticação segura via OAuth 2.0. Nunca pedimos nem armazenamos a palavra-passe da sua conta do TikTok.</p>
-        </div>
-    </section>
+        <h2>1. Aceitação dos Termos</h2>
+        <p>Ao aceder ou utilizar a plataforma <strong>JWCORTES</strong> ("Serviço"), concorda em cumprir estes Termos de Serviço. Caso não concorde com qualquer disposição aqui descrita, não deverá utilizar o aplicativo.</p>
 
-    <section class="promo-banner">
-        <h2>Pronto para escalar a sua produção de conteúdo?</h2>
-        <p>Poupe horas de trabalho manual e mantenha consistência diária no seu perfil com o fluxo inteligente do JWCORTES.</p>
-        <a href="termos.html" class="btn-primary">Começar Agora</a>
-    </section>
+        <h2>2. Descrição do Serviço e Integração com o TikTok</h2>
+        <p>O <strong>JWCORTES</strong> é uma ferramenta desenvolvida para criadores de conteúdo editarem, organizarem e publicarem cortes de vídeo. O Serviço utiliza as APIs oficiais do TikTok (como Login Kit e Content Posting API) mediante autorização expressa do utilizador.</p>
+
+        <h2>3. Conta e Autenticação</h2>
+        <p>A ligação com a sua conta do TikTok é feita exclusivamente através do protocolo oficial OAuth 2.0. O <strong>JWCORTES</strong> não recolhe nem armazena a sua palavra-passe do TikTok, sendo o utilizador responsável pela segurança da sua própria conta.</p>
+
+        <h2>4. Regras de Utilização e Conduta</h2>
+        <p>Ao publicar conteúdos através do <strong>JWCORTES</strong>, compromete-se a respeitar integralmente os <a href="https://tiktok.com" target="_blank">Termos de Serviço do TikTok</a> e as <a href="https://tiktok.com" target="_blank">Diretrizes da Comunidade do TikTok</a>. É estritamente proibido utilizar o Serviço para enviar spam, conteúdo ilegal ou material que viole direitos de autor de terceiros.</p>
+
+        <h2>5. Propriedade Intelectual</h2>
+        <p>Todos os vídeos enviados, editados e publicados permanecem propriedade exclusiva dos respetivos criadores. O design, marca, logótipo e código-fonte do <strong>JWCORTES</strong> pertencem aos seus desenvolvedores.</p>
+
+        <h2>6. Limitação de Responsabilidade</h2>
+        <p>O Serviço é disponibilizado "tal como está". Não garantimos funcionamento ininterrupto nem nos responsabilizamos por alterações técnicas, limites de taxa ou indisponibilidades nas APIs de terceiros (incluindo o TikTok).</p>
+
+        <h2>7. Revogação de Acesso</h2>
+        <p>Pode revogar as permissões do <strong>JWCORTES</strong> a qualquer momento nas definições de segurança e privacidade da sua conta TikTok.</p>
+
+        <h2>8. Contacto</h2>
+        <p>Para suporte ou questões legais, entre em contacto através do e-mail: <strong>contato@jwcortes.com</strong></p>
+    </div>
 
     <footer>
         <p>&copy; 2026 JWCORTES. Todos os direitos reservados.</p>
@@ -226,6 +147,5 @@
             <a href="privacidade.html">Política de Privacidade</a>
         </p>
     </footer>
-
 </body>
 </html>
