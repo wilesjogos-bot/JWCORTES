@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade — JWCORTES</title>
+    <style>
+        :root {
+            --bg-dark: #09090b;
+            --bg-card: #121216;
+            --border-color: #27272a;
+            --text-main: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --accent-cyan: #00f2fe;
+            --accent-pink: #fe2c55;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-dark);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(90deg, #ffffff, var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+        h1 {
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 14px;
+            font-size: 2rem;
+        }
+        h2 {
+            margin-top: 28px;
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+        p, li {
+            color: var(--text-muted);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--accent-cyan);
+        }
+        .date {
+            font-size: 0.9rem;
+            color: #71717a;
+            margin-bottom: 24px;
+        }
+        footer {
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+            text-align: center;
+            padding: 30px 20px;
+            color: #71717a;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">JWCORTES</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="termos.html">Termos de Serviço</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Política de Privacidade</h1>
+        <p class="date">Última atualização: Novembro de 2026</p>
+
+        <h2>1. Introdução</h2>
+        <p>A sua privacidade é uma prioridade para o <strong>JWCORTES</strong>. Esta Política de Privacidade explica como recolhemos, utilizamos, armazenamos e protegemos as suas informações ao utilizar o nosso aplicativo e a integração oficial com a API do TikTok.</p>
+
+        <h2>2. Dados Recolhidos via API do TikTok</h2>
+        <p>Ao conectar a sua conta do TikTok através do fluxo de autenticação oficial (OAuth 2.0), o <strong>JWCORTES</strong> solicita apenas as permissões estritamente necessárias para o funcionamento do serviço:</p>
+        <ul>
+            <li><strong>Informações básicas do perfil:</strong> Nome de exibição, foto de perfil e identificador único (Open ID) para identificar a sua sessão no aplicativo.</li>
+            <li><strong>Permissões de publicação (Content Posting API):</strong> Autorização temporária para enviar e publicar os cortes de vídeo criados ou selecionados por si diretamente na sua conta do TikTok.</li>
+        </ul>
+        <p><strong>Nota importante:</strong> O JWCORTES nunca tem acesso nem armazena a sua palavra-passe do TikTok.</p>
+
+        <h2>3. Como Utilizamos as Informações</h2>
+        <p>Os dados obtidos são utilizados exclusivamente para:</p>
+        <ul>
+            <li>Autenticar o seu acesso à plataforma JWCORTES;</li>
+            <li>Processar, formatar e enviar vídeos para a sua conta do TikTok quando solicitado por si;</li>
+            <li>Garantir a segurança, estabilidade e melhoria contínua do serviço.</li>
+        </ul>
+
+        <h2>4. Partilha e Armazenamento de Dados</h2>
+        <p>Não vendemos, alugamos ou partilhamos os seus dados pessoais ou conteúdos de vídeo com terceiros para fins publicitários. Os tokens de acesso são armazenados de forma encriptada e os ficheiros de vídeo processados são eliminados temporariamente após a conclusão do envio.</p>
+
+        <h2>5. Os Seus Direitos e Revogação de Acesso</h2>
+        <p>Pode revogar o acesso do <strong>JWCORTES</strong> à sua conta a qualquer momento nas definições da sua conta TikTok (<em>Definições e privacidade &gt; Segurança e permissões &gt; Gerir permissões de aplicações</em>) ou solicitar a eliminação definitiva dos seus dados através do nosso contacto.</p>
+
+        <h2>6. Alterações a Esta Política</h2>
+        <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir melhorias no serviço ou requisitos legais. A data de atualização no topo desta página indicará sempre a versão mais recente.</p>
+
+        <h2>7. Contacto</h2>
+        <p>Se tiver dúvidas sobre esta Política de Privacidade ou sobre o tratamento dos seus dados, entre em contacto: <strong>contato@jwcortes.com</strong></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 JWCORTES. Todos os direitos reservados.</p>
+        <p style="margin-top: 8px;">
+            <a href="index.html">Início</a> •
+            <a href="termos.html">Termos de Serviço</a> •
+            <a href="privacidade.html">Política de Privacidade</a>
+        </p>
+    </footer>
+</body>
+</html>
